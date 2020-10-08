@@ -72,13 +72,29 @@ WSGI_APPLICATION = 'eHealth.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
+file = open("database.txt", "r")
+
+dataList = []
+
+for line in file:
+    dataList.append(line.strip())
+
+name = dataList[0]
+pw = dataList[1]
+
 DATABASES = {
     'default': {
+        'NAME': 'ehealth',
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'USER': name,
+        'PASSWORD': pw,
+        'OPTIONS': {
+          'autocommit': True,
+        },
     }
 }
 
+file.close()
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
