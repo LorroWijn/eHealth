@@ -18,5 +18,11 @@ from django.urls import include, path
 
 urlpatterns = [
     path('mainpage/', include('mainpage.urls')),
+    path('agenda/', include('agenda.urls')),
+    path('contact_delta/', include('contact_delta.urls')),
+    path('login/', include('login.urls')),
+    path('nieuws/', include('nieuws.urls')),
+    path('samenwerking/', include('samenwerking.urls')),
+    path('vitaliteit/', include('vitaliteit.urls')),
     path('admin/', admin.site.urls),
 ]
