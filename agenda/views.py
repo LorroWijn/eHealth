@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return render(request, 'index.html')
+    return render(request, 'agenda/agenda_index.html')
