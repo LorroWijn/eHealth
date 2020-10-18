@@ -37,7 +37,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mainpage'
+    'mainpage',
+    'agenda',
+    'contact_delta',
+    'login',
+    'nieuws',
+    'samenwerking',
+    'vitaliteit',
 ]
 
 MIDDLEWARE = [
