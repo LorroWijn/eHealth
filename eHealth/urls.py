@@ -23,6 +23,9 @@ urlpatterns = [
     path('login/', include('login.urls')),
     path('nieuws/', include('nieuws.urls')),
     path('samenwerking/', include('samenwerking.urls')),
+    path('webtest/', include('web_test.urls')),
     path('vitaliteit/', include('vitaliteit.urls')),
+    path('vitaliteit/verbetering/', include('vitaliteit_verbetering.urls')),
+    path('vitaliteit/applicaties/', include('vitaliteit_applicaties.urls')),
     path('admin/', admin.site.urls),
 ]

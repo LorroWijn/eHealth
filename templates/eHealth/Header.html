@@ -1,13 +1,38 @@
 <!doctype html>
 {% include 'eHealth/css.html' %}
 <html lang="en">
-  <div class="topnav">
-    <a class="active" href="http://127.0.0.1:8000/mainpage">Startpagina</a>
-    <!-- <a href="/agenda">Agenda</a> -->
-    <!-- <a href="/nieuws">Nieuws</a> -->
-    <!-- <a href="/samenwerking">Samenwerking</a> -->
-    <!-- <a href="/contact_delta">Contact</a> -->
-    <a href="/vitaliteit">Vitaliteit</a>
-    <!-- <a href="/login">Login</a> -->
-  </div> 
+  <div id='bar' class="topnav">
+    <ul>
+      <li><a id="mainpage" href="http://127.0.0.1:8000/mainpage">Startpagina</a></li>
+      <!-- <a href="/agenda">Agenda</a> -->
+      <!-- <a href="/nieuws">Nieuws</a> -->
+      <!-- <a href="/samenwerking">Samenwerking</a> -->
+      <!-- <a href="/contact_delta">Contact</a> -->
+      <li>
+        Vitaliteit
+        <ul>
+          <li><a id="vitaliteit" href="/vitaliteit">Vitaliteit</a></li>
+          <li><a id="vitaliteit_applicaties" href="/vitaliteit/applicaties">applicaties</a></li>
+          <li><a id="vitaliteit_verbetering" href="/vitaliteit/verbetering">verbetering</a></li>
+        </ul>
+      </li>
+      <!-- <a href="/login">Login</a> -->
+    </ul>
+  </div>
 </html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
+      
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+      
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script> 
+      
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script> 
+
+<script> 
+  var url = window.location.href;
+  var split = url.split("/", 4);
+  var splice = split[3];
+  
+  
+</script> 
