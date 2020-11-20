@@ -13,12 +13,14 @@ body {
   background-color: white;
   border-bottom: 1px solid black;
   font-weight: bold;
-  padding: 20px;
+  /* padding-top: 10%; */
+  padding-bottom: 30%;
   margin-right: 10px;
+  background-size: cover;
 }
 
 .topnav a {
-  float: left;
+  float: right;
   color: black;
   text-align: center;
   padding: 14px 16px;
@@ -46,6 +48,24 @@ body {
 
 .subtitle {
   text-align: center;
+}
+
+.backgroundimage {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-size:cover;
+  width: 100%;
+  height: 20%;
+
+  /* -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -o-filter: blur(2px);
+  -ms-filter: blur(2px);
+  filter: blur(2px); */
 }
 
 </style>
