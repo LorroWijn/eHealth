@@ -1,23 +1,27 @@
 <!doctype html>
-{% load static %}
+<!-- {% load static %} -->
 {% include 'eHealth/css.html' %}
 <html lang="en">
 
-<!-- <div class="backgroundimage"  ;> -->
-  <div id="bar" class='topnav' style="background-image: url('{% static "images\eHealth\jump_background.webp" %}')"></div>
-    <a id="mainpage" href="http://127.0.0.1:8000/mainpage">Startpagina</a>
-    <!-- <a href="/agenda">Agenda</a> -->
-    <!-- <a href="/nieuws">Nieuws</a> -->
-    <!-- <a href="/samenwerking">Samenwerking</a> -->
-    <!-- <a href="/contact_delta">Contact</a> -->
-    <a id="vitaliteit" href="/vitaliteit">Alle posts</a>
-    <a id="vitaliteit_eten" href="/vitaliteit/eten">Eten</a>
-    <a id="vitaliteit_bewegen" href="/vitaliteit/bewegen">Bewegen</a>
-    <a id="vitaliteit_mentaal" href="/vitaliteit/mentaal">Mentaal</a>
-    <!-- <a href="/login">Login</a> -->
+<div class="mainpagePicture">
+  <img class="leftVitaleDelta" src="{% static 'images\eHealth\Vitale_Delta.png' %}">
+  <a style="float: left" href="/mainpage">Regio Zuid-Holland</a>
+  <div>
+    <label class="maintext">Vitaliteit en gezondheid van jong tot oud</label>
+    <label class="maintext2">VITALE DELTA</label>
   </div>
-<!-- </div> -->
-<!-- </div> -->
+  <a id="contact" href="/contact">Contact</a>
+  <a id="login" href="/login">Login</a>
+  <a id="home" href="/mainpage">Home</a>
+</div>
+
+<div id="bar" class='topnav'>
+  <a id="vitaliteit" href="/vitaliteit">Alle posts</a>
+  <a id="vitaliteit_eten" href="/vitaliteit/eten">Eten</a>
+  <a id="vitaliteit_bewegen" href="/vitaliteit/bewegen">Bewegen</a>
+  <a id="vitaliteit_mentaal" href="/vitaliteit/mentaal">Mentaal</a>
+  <a style="float: right" href="/vitaliteit/mentaal">Login/sign up</a>
+</div>
 
 </html>
 
