@@ -14,9 +14,7 @@ body {
   background-color: white;
   border-bottom: 1px solid black;
   font-weight: bold;
-  /* padding-top: 10%; */
   padding-bottom: 35%;
-  /* margin-right: 10px; */
   background-size: cover;
 }
 
@@ -38,6 +36,36 @@ body {
 }
 
 .topnav a.active {
+  background-color: #e83e8c;
+  color: white;
+}
+
+.bodynav {
+  overflow: hidden;
+  background-color: white;
+  font-weight: bold;
+  background-size: cover;
+  margin-bottom: 1%;
+}
+
+.bodynav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.bodynav a:hover {
+  background-color: #e83e8c;
+  color: white;
+  text-decoration: none;
+}
+
+.bodynav a.active {
   background-color: #e83e8c;
   color: white;
 }
@@ -104,14 +132,16 @@ body {
 .functionpicture {
   margin-top: 4%;
   margin-bottom: 4%;
+  max-width:100%;
+  max-height:100%;
+  flex-grow: 1;
 }
 
 .functionpicturetext {
   position: relative;
   color: blue;
   font-size: 2em;
-  margin-left: 4%;
-  margin-right: 4%;
+  margin-bottom: 10%;
 }
 
 .linktext {
