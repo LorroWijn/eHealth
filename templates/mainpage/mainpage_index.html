@@ -19,14 +19,37 @@
 </head>
 
 <body>
+    <div id="bar" class='topnav'>
+        <a id="vitaliteit" href="/vitaliteit">Alle posts</a>
+        <a id="vitaliteit_eten" href="/vitaliteit/eten">Eten</a>
+        <a id="vitaliteit_bewegen" href="/vitaliteit/bewegen">Bewegen</a>
+        <a id="vitaliteit_mentaal" href="/vitaliteit/mentaal">Mentaal</a>
+        <a style="float: right" href="/vitaliteit/mentaal">Login/sign up</a>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
-                <img class="img-fluid" src="{% static "images\eHealth\Vitale_Delta.jpg" %}"
+                <img class="img-fluid functionpicture" src="{% static "images\eHealth\Vitale_Delta.png" %}"
                     alt="Kan afbeelding niet vinden">
-                <h1>Functie 1</h1>
+                <a class="functionpicturetext" href="/vitaliteit">Definitie vitaliteit</a>
+            </div>
+            <div class="col-sm-3">
+                <img class="img-fluid functionpicture" src="{% static "images\eHealth\Vitale_Delta.png" %}"
+                    alt="Kan afbeelding niet vinden">
+                <a class="functionpicturetext" href="/vitaliteit/verbetering">Vitaliteit verbeteren</a>
+            </div>
+            <div class="col-sm-3">
+                <img class="img-fluid functionpicture" src="{% static "images\eHealth\Vitale_Delta.png" %}"
+                    alt="Kan afbeelding niet vinden">
+                <a class="functionpicturetext" href="/vitaliteit/applicaties">Vitaliteits applicaties</a>
+            </div>
+            <div class="col-sm-3">
+                <img class="img-fluid functionpicture" src="{% static "images\eHealth\Vitale_Delta.png" %}"
+                    alt="Kan afbeelding niet vinden">
+                <h1 class="functionpicturetext">Functie 4</h1>
             </div>
         </div>
+    </div>
 
         <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
