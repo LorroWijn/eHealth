@@ -101,6 +101,11 @@ body {
   margin: 0 10px;
 }
 
+.mainpagePicture a:hover{
+  color: #e83e8c;
+  text-decoration: none;
+}
+
 .leftVitaleDelta{
   height: 10%;  
   width: 20%;
@@ -130,24 +135,96 @@ body {
 }
 
 .functionpicture {
+  filter: brightness(80%);
   margin-top: 4%;
   margin-bottom: 4%;
-  max-width:100%;
-  max-height:100%;
+  height: 10%;
   flex-grow: 1;
 }
 
 .functionpicturetext {
-  position: relative;
-  color: blue;
+  position: absolute;
+  color: white;
   font-size: 2em;
-  margin-bottom: 10%;
+  font-weight: bold;
+  top: 1%;
+  left: 10%;
+  margin-right: 40%;
+}
+
+.functionpicturetext:hover {
+  color: #e83e8c;
+  text-decoration: none;
+}
+
+.functiondescription {
+  position: relative;
 }
 
 .linktext {
   position: relative;
   color: blue;
   font-size: 1.4em;
+}
+
+@media screen and (max-width: 1366px) {
+  .functionpicture {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 6%;
+    flex-grow: 1;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .functionpicture {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    height: 2.4%;
+    flex-grow: 1;
+  }
+
+  .functionpicturetext {
+    font-size: 10px;
+    font-weight: bold;
+    top: 10px;
+    left: 20px;
+    margin-right: 90%;
+  }
+
+  .functiondescription {
+    font-size: 10px;
+  }
+
+  .mainpagePicture {
+    font-size: 10px;
+  }
+
+  .mainpagePicture a {
+    font-size: 10px;
+  }
+
+  .maintext {
+    font-size: 14px;
+  }
+
+  .maintext2 {
+    font-size:  20px;
+  }
+
+  .mainpagePicture a {
+    font-size: 10px;
+    float: right;
+    text-align: right;
+    padding: 0px;
+    margin: 4px;
+  }
+
+  .bodynav a {
+    font-size: 12px;
+    padding: 4px 6px;
+    margin: 0 0px;
+  }
 }
 
 </style>
