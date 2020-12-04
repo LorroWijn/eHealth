@@ -27,24 +27,30 @@
         <a style="float: right" href="/vitaliteit/mentaal">Login/sign up</a>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row mainpagerow">
             <div class="col-xs-3">
-                <img class="img-fluid functionpicture" style="background-color: lightgrey;" src="{% static "images\eHealth\Vitale_Delta.png" %}"
-                    alt="Kan afbeelding niet vinden">
-                <a class="functionpicturetext" href="/vitaliteit">Definitie vitaliteit</a>
-                <h4 class="functiondescription">Voor meer informatie over vitaliteit en wat het precies inhoudt.</h4>
+                <div class="functionlink" onclick="location.href='/vitaliteit';">
+                    <img class="img-fluid functionpicture" style="background-color: lightgrey;" src="{% static "images\eHealth\Vitale_Delta.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit">Definitie vitaliteit</a>
+                    <h4 class="functiondescription">Voor meer informatie over vitaliteit en wat het precies inhoudt.</h4>
+                </div>
             </div>
             <div class="col-xs-3">
-                <img class="img-fluid functionpicture" src="{% static "images\eHealth\Vitale_Delta.png" %}"
-                    alt="Kan afbeelding niet vinden">
-                <a class="functionpicturetext" href="/vitaliteit/verbetering">Vitaliteit verbeteren</a>
-                <h4 class="functiondescription">Voor meer informatie over hoe u uw vitaliteit kunt verbeteren.</h4>
+                <div class="functionlink" onclick="location.href='/vitaliteit/verbetering';">
+                    <img class="img-fluid functionpicture" style="background-color: lightgrey;" src="{% static "images\eHealth\Vitale_Delta.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/verbetering">Vitaliteit verbeteren</a>
+                    <h4 class="functiondescription">Voor meer informatie over hoe u uw vitaliteit kunt verbeteren.</h4>
+                </div>
             </div>
             <div class="col-xs-3">
-                <img class="img-fluid functionpicture" src="{% static "images\eHealth\Vitale_Delta.png" %}"
-                    alt="Kan afbeelding niet vinden">
-                <a class="functionpicturetext" href="/vitaliteit/applicaties">Vitaliteits applicaties</a>
-                <h4 class="functiondescription">Voor meer informatie over enkele applicaties, die uw vitaliteit kunnen verbeteren.</h4>
+                <div class="functionlink" onclick="location.href='/vitaliteit/applicaties';">
+                    <img class="img-fluid functionpicture" style="background-color: lightgrey;" src="{% static "images\eHealth\Vitale_Delta.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/applicaties">Vitaliteits applicaties</a>
+                    <h4 class="functiondescription">Voor meer informatie over enkele applicaties, die uw vitaliteit kunnen verbeteren.</h4>
+                </div>
             </div>
             <div class="col-xs-3">
                 <img class="img-fluid functionpicture" style="background-color: cornflowerblue;" src="{% static "images\eHealth\logo-fitstap.png" %}"
