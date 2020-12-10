@@ -27,6 +27,7 @@ urlpatterns = [
     path('vitaliteit/', include('vitaliteit.urls')),
     path('vitaliteit/verbetering/', include('vitaliteit_verbetering.urls')),
     path('vitaliteit/applicaties/', include('vitaliteit_applicaties.urls')),
+    path('vitaliteit/grip_op_coronastress/', include('vitaliteit_grip_op_coronastress.urls')),
     path('vitaliteit/fitstap/', include('vitaliteit_fitstap.urls')),
     path('admin/', admin.site.urls),
 ]
