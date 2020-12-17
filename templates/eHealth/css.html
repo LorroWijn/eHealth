@@ -9,36 +9,38 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.topnav {
-  overflow: hidden;
-  background-color: white;
-  border-bottom: 1px solid black;
-  font-weight: bold;
-  padding-bottom: 35%;
-  background-size: cover;
+.headerDiv{
+  /* overflow: hidden; */
+  /* background-color: white; */
+  /* border-bottom: 1px solid black; */
+  /* font-weight: bold; */
+  /* padding-bottom: 6%; */
+  background-color: #a25e85;
+  /* height: auto; */
+  padding-bottom: 1%;
+  padding-top: 1%;
+  padding-left: 12%;
+  padding-right: 12%;
 }
 
-.topnav a {
+.headerDiv a{
+  float: right;
+  color: white;
+  /* text-align: center; */
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+.headerDiv a:hover{
+  color: #e83e8c;
+  text-decoration: none;
+}
+
+.leftVitaleDelta{
   float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  margin: 0 10px;
-}
-
-.topnav a:hover {
-  background-color: #e83e8c;
-  color: white;
-  text-decoration: none;
-}
-
-.topnav a.active {
-  background-color: #e83e8c;
-  color: white;
+  width: 7em;
 }
 
 .bodynav {
@@ -85,7 +87,8 @@ body {
   background-color: white;
   border-bottom: 1px solid black;
   font-weight: bold;
-  padding-bottom: 16%;
+  padding: 1%;
+  padding-bottom: 14%;
   background-size: cover;
   background-image: url('{% static "images\eHealth\jump_background.webp" %}');
   background-color: #000000;
@@ -104,40 +107,6 @@ body {
 .mainpagePicture a:hover{
   color: #e83e8c;
   text-decoration: none;
-}
-
-.headerDiv{
-  /* overflow: hidden; */
-  /* background-color: white; */
-  /* border-bottom: 1px solid black; */
-  /* font-weight: bold; */
-  /* padding-bottom: 6%; */
-  background-color: #a25e85;
-  height: auto;
-  padding-bottom: 1%;
-  padding-top: 1%;
-}
-
-.headerDiv a{
-  /* float: right; */
-  color: white;
-  /* text-align: center; */
-  /* float: right; */
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: bold;
-  margin-left: 5%;
-}
-
-.headerDiv a:hover{
-  color: #e83e8c;
-  text-decoration: none;
-}
-
-
-.leftVitaleDelta{
-  /* height: 10%; */
-  width: 8em;
 }
 
 .maintextdiv{
@@ -233,12 +202,20 @@ body {
 }
 
 @media screen and (max-width: 640px) {
+  .headerDiv a{
+  font-size: 14px;
+}
+
+.leftVitaleDelta{
+  width: 4em;
+}
+  
   .functionpicture {
     flex-grow: 1;
   }
 
   .functionpicturetext {
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
     top: 10px;
     left: 5px;
@@ -246,15 +223,15 @@ body {
   }
 
   .functiondescription {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .mainpagePicture {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .mainpagePicture a {
-    font-size: 10px;
+    font-size: 9px;
   }
 
   .maintext {
@@ -266,7 +243,7 @@ body {
   }
 
   .mainpagePicture a {
-    font-size: 10px;
+    font-size: 9px;
     float: right;
     text-align: right;
     padding: 0px;
@@ -278,7 +255,6 @@ body {
     padding: 4px 6px;
     margin: 0 0px;
   }
-
 }
 
 </style>
