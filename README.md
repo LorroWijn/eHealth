@@ -27,4 +27,4 @@ Several tasks have not been completed during the time we worked on the project. 
 
 Finally after reading through this readme and after you are finished with the project, this readme should be updated by you to ensure that the next group working on this project knows what has to be done to finish the project.
 
-This is everything we could explain to you at the moment. Explaining things like html and css is impossible to explain in a few lines, so you must learn this yourself. Maybe through tutorials and by googling and finding stackoverflow pages or documentation form w3schools. We wish you good luck with this project and hope you can improve it a lot to help people get more and better vitamin B12 information.
+This is everything we could explain to you at the moment. Explaining things like html and css is impossible to explain in a few lines, so you must learn this yourself. Maybe through tutorials and by googling and finding stackoverflow pages or documentation form w3schools. We wish you good luck with this project and hope you can improve it a lot to help people get better EHealth with this web application.
