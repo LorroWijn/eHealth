@@ -27,5 +27,11 @@ urlpatterns = [
     path('vitaliteit/', include('vitaliteit.urls')),
     path('vitaliteit/verbetering/', include('vitaliteit_verbetering.urls')),
     path('vitaliteit/applicaties/', include('vitaliteit_applicaties.urls')),
+    path('vitaliteit/grip_op_coronastress/', include('vitaliteit_grip_op_coronastress.urls')),
+    path('vitaliteit/psyfitter/', include('vitaliteit_psyfitter.urls')),
+    path('vitaliteit/energyplatform/', include('vitaliteit_energyplatform.urls')),
+    path('vitaliteit/proudwoman/', include('vitaliteit_proudwoman.urls')),
+    path('vitaliteit/vgz_mindfulness_coach_app/', include('vitaliteit_vgz_mindfulness_coach_app.urls')),
+    path('vitaliteit/fitstap/', include('vitaliteit_fitstap.urls')),
     path('admin/', admin.site.urls),
 ]

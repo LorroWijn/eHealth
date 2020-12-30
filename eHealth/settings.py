@@ -15,6 +15,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+DIRNAME = os.path.abspath(os.path.dirname(__file__))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -65,6 +66,10 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'static'),
+            os.path.join(DIRNAME, '/eHealth/templates'),
+            os.path.join(DIRNAME, '/eHealth/static'),
+            '/eHealth/templates',
+            '/eHealth/static',
             ],
         'APP_DIRS': True,
         'OPTIONS': {

@@ -2,7 +2,7 @@
 
 {% load static %}
 
-{% include '../eHealth/header.html' %}
+{% include '../eHealth/bigHeader.html' %}
 
 <html lang="en">
 
@@ -53,10 +53,56 @@
                 </div>
             </div>
             <div class="col-xs-3">
-                <img class="img-fluid functionpicture" style="background-color: cornflowerblue;" src="{% static "images\eHealth\logo-fitstap.png" %}"
-                    alt="Kan afbeelding niet vinden">
-                <h1 class="functionpicturetext">Fitstap</h1>
-                <h4 class="functiondescription">Hier kunt u meer informatie over Fitstap vinden.</h4>
+                <div class="functionlink" onclick="location.href='/vitaliteit/grip_op_coronastress';">
+                    <img class="img-fluid functionpicture" style="background-color: lightgrey;" src="{% static "images\eHealth\vgz-logo.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/grip_op_coronastress">Grip op coronastress</a>
+                    <h4 class="functiondescription">Hier kunt u meer informatie over de app Grip op coronastress van VGZ vinden</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row mainpagerow">
+            <div class="col-xs-3">
+                <div class="functionlink" onclick="location.href='/vitaliteit/psyfitter';">
+                    <img class="img-fluid functionpicture" style="background-color: aqua;" src="{% static "images\eHealth\logo-psyfitter.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/psyfitter">Psyfitter</a>
+                    <h4 class="functiondescription">Hier kunt u meer informatie over Psyfitter vinden.</h4>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="functionlink" onclick="location.href='/vitaliteit/energyplatform';">
+                    <img class="img-fluid functionpicture" style="background-color: orange;" src="{% static "images\eHealth\logo-energyplatform.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/energyplatform">Energyplatform</a>
+                    <h4 class="functiondescription">Hier kunt u meer informatie over Energyplatform vinden.</h4>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="functionlink" onclick="location.href='/vitaliteit/proudwoman';">
+                    <img class="img-fluid functionpicture" style="background-color: salmon;" src="{% static "images\eHealth\logo-HealthyWoman.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/proudwoman">ProudWoman</a>
+                    <h4 class="functiondescription">Hier kunt u meer informatie over de applicatie ProudWoman vinden.</h4>
+                </div>
+            </div>
+            <div class="col-xs-3">
+                <div class="functionlink" onclick="location.href='/vitaliteit/vgz_mindfulness_coach_app';">
+                    <img class="img-fluid functionpicture" style="background-color: lightgray;" src="{% static "images\eHealth\vgz-logo.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/vgz_mindfulness_coach_app">Mindfulness coach app</a>
+                    <h4 class="functiondescription">Hier kunt u meer informatie over de VGZ Mindfulness coach app vinden.</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row mainpagerow">
+            <div class="col-xs-3">
+                <div class="functionlink" onclick="location.href='/vitaliteit/fitstap';">
+                    <img class="img-fluid functionpicture" style="background-color: cornflowerblue;" src="{% static "images\eHealth\logo-fitstap.png" %}"
+                        alt="Kan afbeelding niet vinden">
+                    <a class="functionpicturetext" href="/vitaliteit/fitstap">Fitstap</a>
+                    <h4 class="functiondescription">Hier kunt u meer informatie over Fitstap vinden.</h4>
+                </div>
             </div>
         </div>
     </div>
@@ -73,7 +119,5 @@
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             crossorigin="anonymous"></script>
 </body>
-
 {% include '../eHealth/footer.html' %}
-
 </html>
